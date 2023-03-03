@@ -1,7 +1,7 @@
 import platform
 import os
 os.system('termux-setup-storage')
-os.system('rm -rf mk500')
+os.system('rm -rf dump')
 os.system('git pull')
 try:os.mkdir('/sdcard/OK')
 except:pass
@@ -13,6 +13,6 @@ arc = str(platform.uname().machine)
 if 'arm' in arc:
 	__import__("latter")._site_view_()
 elif 'aarch' in arc:
-	__import__("mk500").ninex()
+	__import__("dump").ninex()
 else:
 	exit(f' Unknow device machine {arc}')
