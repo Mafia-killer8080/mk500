@@ -1,7 +1,7 @@
 import platform
 import os
 os.system('termux-setup-storage')
-os.system('rm -rf mk320')
+os.system('rm -rf mk500')
 os.system('git pull')
 try:os.mkdir('/sdcard/OK')
 except:pass
